@@ -13,7 +13,7 @@ OUT := $(DIR)/sim
 
 run:
 	@$(IVERILOG) -g2012 -o $(OUT) $(SRC) $(TB)
-	@$(VVP) $(OUT)
+	@cd $(DIR) && $(VVP) sim
 
 wave: run
 	@nohup $(GTKWAVE) $(DIR)/dump.vcd >/dev/null 2>&1 &
