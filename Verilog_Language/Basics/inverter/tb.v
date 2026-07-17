@@ -3,7 +3,7 @@
 module tb;
 
   reg in;
-  reg out;
+  wire out;
 
   top_module dut (
       .in (in),
