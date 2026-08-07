@@ -11,12 +11,12 @@ module top_module (
 
   always @(*) begin
     case (sel)
-      4'd0: out <= data0;
-      4'd1: out <= data1;
-      4'd2: out <= data2;
-      4'd3: out <= data3;
-      4'd4: out <= data4;
-      4'd5: out <= data5;
+      4'd0: out = data0;
+      4'd1: out = data1;
+      4'd2: out = data2;
+      4'd3: out = data3;
+      4'd4: out = data4;
+      4'd5: out = data5;
       default: out = 4'b0;
     endcase
   end
